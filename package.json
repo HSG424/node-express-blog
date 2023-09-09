@@ -1,0 +1,11 @@
+{
+  "name": "node-express-blog",
+  "version": "1.0.0",
+  "description": "A basic blog with CRUD functionality. Built with Node, Express, MongoDB, Mongoose, and EJS.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fred Han",
+  "license": "ISC"
+}
