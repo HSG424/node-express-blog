@@ -17,3 +17,14 @@ mongoose
     })
   )
   .catch((err) => console.log(err));
+
+// register view engine
+app.set("view engine", "ejs");
+
+// middleware & static files
+app.use(express.static("public"));
+
+// routes
+app.get("/about", (req, res) => {
+  res.render("about", { title: "About" });
+});
