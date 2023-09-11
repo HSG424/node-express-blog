@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-
+const blogRoutes = require("./routes/blogRoutes");
 const { port, env, user, password, dbOptions } = require("./config");
 
 // express app
@@ -23,8 +23,16 @@ app.set("view engine", "ejs");
 
 // middleware & static files
 app.use(express.static("public"));
+app.use(express.urlencoded({ extended: true }));
 
 // routes
+app.get("/", (req, res) => {
+  res.redirect("/blogs");
+});
+
 app.get("/about", (req, res) => {
   res.render("about", { title: "About" });
 });
+
+// blog routes
+app.use("/blogs", blogRoutes);
