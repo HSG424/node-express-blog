@@ -6,7 +6,7 @@ This blog implements basic CRUD functionality and follows the MVC design pattern
 
 Thanks for visiting!
 
-Live deployment:
+Live deployment: [https://dull-gold-newt-vest.cyclic.app/](https://dull-gold-newt-vest.cyclic.app/)
 
 ## Installation
 
