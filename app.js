@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const blogRoutes = require("./routes/blogRoutes");
-const { port, env, user, password, dbOptions } = require("./config");
+const { port, user, password, dbOptions } = require("./config");
 
 // express app
 const app = express();
@@ -36,3 +36,8 @@ app.get("/about", (req, res) => {
 
 // blog routes
 app.use("/blogs", blogRoutes);
+
+// 404 page
+app.use((req, res) => {
+  res.status(404).render("404", { title: "404" });
+});

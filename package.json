@@ -4,7 +4,12 @@
   "description": "A basic blog with CRUD functionality. Built with Node, Express, MongoDB, Mongoose, and EJS.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HSG424/node-express-blog.git"
   },
   "author": "Fred Han",
   "license": "ISC",

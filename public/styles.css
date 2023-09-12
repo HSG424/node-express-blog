@@ -71,20 +71,23 @@ nav p {
 footer {
   color: #777;
   text-align: center;
-  margin-top: 2.6875rem;
+  margin-top: 2.375rem;
   font-size: 0.925rem;
 }
 h2 {
-  margin-bottom: 1.1875rem;
+  margin-bottom: 0.78125rem;
   font-size: 1.725rem;
   text-align: center;
   font-weight: 600;
 }
 h3 {
   text-transform: capitalize;
-  margin-bottom: 0.5625rem;
+  margin-bottom: 0.34375rem;
   font-size: 1.025rem;
   font-weight: 700;
+}
+.text-center {
+  text-align: center;
 }
 .content {
   margin-left: 1.25rem;
@@ -98,7 +101,7 @@ h3 {
 /* index styles */
 .blogs a {
   display: block;
-  margin: 2.375rem 0;
+  margin: 1.8125rem 0;
   border-left: 0.375rem solid crimson;
   background-color: aliceblue;
   padding: 1.58125rem 2.0625rem;
@@ -113,9 +116,24 @@ footer a:hover {
   color: crimson;
 }
 
+/* about styles */
+.about p {
+  margin-bottom: 1rem;
+}
+
+.about a {
+  color: crimson;
+}
+.about a:hover {
+  color: red;
+  text-decoration: underline;
+}
 /* details styles */
 .details {
   position: relative;
+}
+.details p {
+  white-space: pre-line;
 }
 .delete {
   position: absolute;
@@ -127,6 +145,11 @@ footer a:hover {
 .delete:hover {
   cursor: pointer;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.delete img {
+  filter: invert(15%) sepia(94%) saturate(6980%) hue-rotate(5deg)
+    brightness(97%) contrast(120%);
 }
 
 /* create styles */
